@@ -1,0 +1,149 @@
+from asyncore import loop
+import turtle
+
+
+t= turtle.Turtle()
+s=turtle.Screen()
+t.speed(0)
+#This is the head
+t.color("darkseagreen", "darkseagreen")
+t.pd()
+t.begin_fill()
+t.forward(100)
+t.right(90)
+t.forward(100)
+t.right(90)
+t.forward(100)
+t.right(90)
+t.forward(100)
+t.pu()
+t.end_fill()
+
+#These are the eyes
+t.setpos(38, -40)
+t.color("light cyan", "light cyan")
+t.begin_fill()
+t.pd()
+t.circle(20)
+t.end_fill()
+t.pu()
+
+t.setpos(97, -40)
+t.color("light cyan", "light cyan")
+t.begin_fill()
+t.pd()
+t.circle(20)
+t.end_fill()
+t.pu()
+
+#These are the pupils
+t.setpos(40, -40)
+t.color("palevioletred", "palevioletred")
+t.begin_fill()
+t.pd()
+t.circle(9)
+t.end_fill()
+t.pu()
+
+t.setpos(98, -40)
+t.color("palevioletred", "palevioletred")
+t.begin_fill()
+t.pd()
+t.circle(9)
+t.end_fill()
+t.pu()
+
+#This is the body
+t.setpos(50, -250)
+t.color("darkseagreen", "darkseagreen")
+t.pd()
+t.begin_fill()
+t.forward(150)
+t.right(90)
+t.forward(300)
+t.right(90)
+t.forward(150)
+t.right(90)
+t.forward(300)
+t.right(90)
+t.pu()
+t.end_fill()
+
+#These are the legs
+t.setpos(48, -300)
+t.color("darkseagreen", "darkseagreen")
+t.pd()
+t.begin_fill()
+t.forward(100)
+t.right(90)
+t.forward(100)
+t.right(90)
+t.forward(100)
+t.right(90)
+t.forward(100)
+t.pu()
+t.end_fill()
+
+t.setpos(350, -300)
+t.color("darkseagreen", "darkseagreen")
+t.pd()
+t.begin_fill()
+t.forward(100)
+t.right(90)
+t.forward(100)
+t.right(90)
+t.forward(100)
+t.right(90)
+t.forward(100)
+t.pu()
+t.end_fill()
+
+#This is the mouth :)
+t.setpos(45, -85)
+t.color("black", "black")
+t.begin_fill()
+t.pd()
+t.circle(9)
+t.end_fill()
+t.pu()
+
+
+#This is the tail.
+t.setpos(355, -100)
+t.color("yellowgreen", "yellowgreen")
+t.begin_fill()
+t.pd()
+t.width(15)
+t.right(100)
+t.backward(90)
+t.right(100)
+t.backward(90)
+t.right(100)
+t.backward(90)
+t.end_fill()
+t.pu()
+#Credit: Geeksforgeeks.org
+
+
+t.setpos(330, -58)
+t.color("yellowgreen", "yellowgreen")
+t.begin_fill()
+t.right(25)
+t.forward(50)
+t.right(125)
+e = 0
+t.right(37)
+while e <= 2:
+    t.color("yellowgreen", "yellowgreen")
+    t.begin_fill()
+    t.left(25) 
+    t.forward(50)
+    t.left(25)
+    t.forward(50)
+    t.right(50)
+    t.end_fill()
+    e += 1
+
+
+
+s.exitonclick()
